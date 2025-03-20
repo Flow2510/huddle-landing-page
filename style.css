@@ -1,0 +1,372 @@
+*{
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 18px;
+}
+
+body{
+    font-family: "open sans";
+}
+
+main{
+    text-align: center;
+    background: url(images/bg-hero-mobile.svg) no-repeat, hsl(193, 100%, 96%);
+    background-size: contain;
+}
+
+h1, h2,h3, button{
+    font-family: "poppins";
+}
+
+header{
+    padding: 1rem 1rem 2.5rem 1rem;
+    display: flex;
+    background-color: hsl(193, 100%, 96%);
+    justify-content: space-between;
+}
+
+.header_img_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header button{
+    border: none;
+    font-size: 0.5rem;
+    padding: 0.2rem 1.5rem;
+    max-width: fit-content;
+    border-radius: 9999px;
+    background-color: white;
+    font-weight: 600;
+}
+
+header img{
+    max-width: 85px;
+    max-height: max-content;
+}
+
+.welcome_section{
+    padding: 0 2rem;
+    color: hsl(192, 100%, 9%);
+}
+
+.welcome_section img{
+    margin: 1rem 0;
+}
+
+.welcome_section p{
+    font-size: 0.7rem;
+    line-height: 1.1rem;
+    font-weight: 500;
+}
+
+h1{
+    padding: 1rem 0;
+    font-size: 1.1rem;
+}
+
+h2{
+    font-size: 0.9rem;
+    color: hsl(192, 100%, 9%);
+}
+
+h3{
+    color: hsl(192, 100%, 9%);
+    font-size: 0.85rem;
+}
+
+.main_without_welcome_section{
+    padding: 1rem 1rem;
+    background: linear-gradient(to top, hsl(192, 100%, 9%) 7%, hsl(0, 0%, 100%) 0);/* regler comme il faut a la fin du design*/ 
+}
+
+.grow_section, .flowing_section, .users_section{
+    background-color: white;
+    padding: 2rem;
+    margin: 1.5rem 0;
+    border-radius: 0.5rem;
+}
+
+.ready_section{
+    background-color: white;
+    margin: 1.5rem 0;
+    border-radius: 0.5rem;
+    padding: 1.5rem 0 0.5rem 0;
+}
+
+footer{
+    color: hsla(0, 0%, 100%, 0.7);
+    background-color: hsl(192, 100%, 9%);
+    padding: 1rem;
+}
+
+.adress, .mail, .phone{
+    display: flex;
+}
+
+.adress::before{
+    content: url(images/icon-location.svg);
+    margin-right: 1rem;  
+    padding: 0.0.5rem 0 0 0;  
+}
+
+.phone::before{
+    content: url(images/icon-phone.svg);
+    margin-right: 1rem; 
+    padding: 0.05rem 0 0 0;
+}
+
+.mail::before{
+    content: url(images/icon-email.svg);
+    margin-right: 1rem; 
+    padding: 0.05rem 0 0 0;
+}
+
+main button{
+    background-color: hsl(322, 100%, 66%);
+    border: none;
+    border-radius: 9999px;
+    padding: 0.5rem 2.5rem;
+    color: white;
+    font-size: 0.6rem;
+    margin: 1.5rem auto;
+    width: fit-content;
+    text-wrap: nowrap;
+}
+
+footer ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.main_without_welcome_section p{
+    color: hsl(208, 11%, 55%);
+    font-size: 0.65rem;
+    line-height: 1rem;
+}
+
+.main_without_welcome_section h2{
+    margin: 1rem 0;
+}
+
+.main_without_welcome_section section{
+    box-shadow: 0 0 0.3rem 0.3rem hsla(0, 0%, 39%, 0.05);
+}
+
+footer li{
+    margin: 1rem 0;
+    font-size: 0.8rem;
+    width: fit-content;
+}
+
+footer p{
+    margin: 1rem 0;
+    font-size: 0.7rem;
+    line-height: 1rem;
+    
+}
+
+footer img{
+    max-width: 150px;
+    filter: saturate(100) brightness(0) invert();
+}
+
+.footer_footer{
+    font-size: 0.5rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.footer_social_link{
+    display: flex;
+    justify-content: center;
+}
+
+ion-icon{
+    border: 1px solid;
+    width: 20px;
+    height: 20px;
+    border-radius: 9999px;
+    padding: 5px;
+    margin: 0 0.5rem;
+}
+
+button, li, ion-icon, .mail{
+    cursor: pointer;
+}
+
+main button:hover{
+    background-color: hsla(322, 100%, 66%, 0.7);
+}
+
+ion-icon:hover{
+    border-color: hsl(322, 100%, 66%);
+    color: hsl(322, 100%, 66%);
+}
+
+@media screen and (min-width:400px) and (max-width:800px) {
+    .welcome_section {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .grow_section, .flowing_section, .users_section, .ready_section{
+        max-width: 400px;
+        margin: 1.5rem auto;
+    }
+
+    .footer_container{
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width:800px) and (max-width:1200px) {
+    .welcome_section {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .grow_section, .flowing_section, .users_section, .ready_section{
+        max-width: 600px;
+        margin: 1.5rem auto;
+    }
+
+    .footer_container{
+        margin: 0 auto;
+    }
+
+    .mail::before, .adress::before, .phone::before{
+        padding: 0;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .welcome_section{
+        display: grid;
+        grid-template-columns: 44% auto;
+    }
+
+    .grow_section, .flowing_section, .users_section{
+        display: grid;
+        grid-template-columns: 50% auto;
+        padding: 1rem 2rem;
+    }
+
+    html{
+        font-size: 35px;
+    }
+
+    header{
+        padding: 2.5rem 2.5rem 1rem 2.5rem;
+    }
+
+    header img{
+        max-width: 240px;
+    }
+
+    main{
+        text-align: left;
+    }
+
+    .welcome_section_content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 2rem;
+    }
+
+    .main_without_welcome_section{
+        padding: 4rem 6rem 1rem 6rem;
+    }
+
+    .grow_content, .users_content, .flowing_content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .grow_section img, .users_section img{
+        padding-left: 5rem;
+    }
+
+    h1{
+        font-size: 1.4rem;
+        font-weight: 600;
+        padding-right: 2rem;
+    }
+
+    .main_without_welcome_section h2{
+        margin: 0 0 0.5rem 0;
+    }
+
+    .welcome_section button{
+        margin: 1.5rem 0;
+    }
+
+    .welcome_section{
+        padding: 0 2.5rem;
+    }
+
+    .flowing_section img{
+        padding-right: 5rem;
+    }
+
+    .ready_section{
+        text-align: center;
+    }
+
+    .grow_img_container{
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .grow_content{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .flowing_img_container{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .flowing_content{
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .users_img_container{
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .users_content{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .footer_main{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+
+    .footer_social_link{
+        margin-top: 1rem;
+    }
+
+    .footer_main li{
+        width: max-content;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
